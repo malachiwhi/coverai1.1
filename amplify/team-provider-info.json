@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-coverai1-dev-120747-authRole",
+      "UnauthRoleArn": "arn:aws:iam::304414522510:role/amplify-coverai1-dev-120747-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::304414522510:role/amplify-coverai1-dev-120747-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-coverai1-dev-120747-deployment",
+      "UnauthRoleName": "amplify-coverai1-dev-120747-unauthRole",
+      "StackName": "amplify-coverai1-dev-120747",
+      "StackId": "arn:aws:cloudformation:us-east-1:304414522510:stack/amplify-coverai1-dev-120747/5eab3910-c282-11ed-ac12-124510681efd",
+      "AmplifyAppId": "d1gdp79tjiqlub"
+    }
+  }
+}
