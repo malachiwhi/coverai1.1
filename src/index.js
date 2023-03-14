@@ -4,11 +4,22 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { ThemeProvider } from "@aws-amplify/ui-react";
+import { Amplify } from 'aws-amplify';
+import awsconfig from './aws-exports';
+import "@aws-amplify/ui-react/styles.css";
+import { studioTheme } from "./ui-components";
+Amplify.configure(awsconfig);
+import {
+  Component1 
+ } from './ui-components';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <ThemeProvider theme={studioTheme}>
     <App />
-  </React.StrictMode>
+    <Component1 />
+  </ThemeProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
