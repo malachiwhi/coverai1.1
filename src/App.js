@@ -7,7 +7,8 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      <aside className = "side-menu"> 
+      </aside>
         <h1>Welome to CoverAI </h1>
       <div className= ""> 
         <label for="Fname">First Name: </label>
@@ -19,7 +20,6 @@ function App() {
         <textarea className = "Skills and Projects" > Skills projects and certifications</textarea>
         <textarea className = "why" > Why you want the postion</textarea>
       </div>
-      </header>
     </div>
   );
 }
