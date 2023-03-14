@@ -7,8 +7,6 @@ function App() {
 
   return (
     <div className="App">
-      <aside className = "side-menu"> 
-      </aside>
         <h1>Welome to CoverAI </h1>
       <div className= ""> 
         <label for="Fname">First Name: </label>

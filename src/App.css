@@ -7,12 +7,6 @@
   pointer-events: none;
 }
 
-.side-menu{
-  width:240px; 
-  padding: 10px; 
-  background-color: #635985;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
