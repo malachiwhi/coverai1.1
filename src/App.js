@@ -7,10 +7,11 @@ function App() {
 
   return (
     <div className="App">
-      <aside className = "side-menu"> 
+      <aside className = "sidemenu">
+          <span className= "side-menu-button">+</span>
       </aside>
         <h1>Welome to CoverAI </h1>
-      <div className= ""> 
+      <div className= "options"> 
         <label for="Fname">First Name: </label>
         <textarea rows ="1" className = "Fname">Enter First name</textarea> 
         <textarea className = "Lname">Enter Last name</textarea> 
