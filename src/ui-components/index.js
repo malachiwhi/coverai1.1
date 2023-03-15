@@ -22,5 +22,5 @@ export { default as HomePage } from "./HomePage";
 export { default as Component17 } from "./Component17";
 export { default as studioTheme } from "./studioTheme";
 export { default as NewForm1 } from "./NewForm1";
-export { default as CoverSearchUpdateForm } from "./CoverSearchUpdateForm";
 export { default as CoverSearchCreateForm } from "./CoverSearchCreateForm";
+export { default as CoverSearchUpdateForm } from "./CoverSearchUpdateForm";

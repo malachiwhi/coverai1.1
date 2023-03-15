@@ -17,10 +17,24 @@ code {
   height: 650px;
   padding: 10px; 
   background-color: #635985;
+  text-align: center;
 }
 
-.fname {
-  position: relative;
-  top: 10px; 
-  left: 10px;
+.App {
+  text-align: center;
+  display: flex;
+  background-color: white;
+  color:white; 
+  position: absolute;
+  top:0;bottom:0;right:0;left:0; 
 }
+
+.lname {
+  float:right;
+  padding:10px 20px;
+}
+
+.btn {
+  float:right;
+}
+

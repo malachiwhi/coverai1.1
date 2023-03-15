@@ -9,7 +9,7 @@ import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Text, View } from "@aws-amplify/ui-react";
 export default function FirstName(props) {
-  const { overrides, ...rest } = props;
+  const { rectangle245, overrides, ...rest } = props;
   return (
     <View
       width="335px"
@@ -38,6 +38,7 @@ export default function FirstName(props) {
         borderRadius="15px"
         padding="0px 0px 0px 0px"
         backgroundColor="rgba(217,217,217,0.65)"
+        children={rectangle245}
         {...getOverrideProps(overrides, "Rectangle 245")}
       ></View>
       <Text

@@ -6,16 +6,14 @@
 
 import * as React from "react";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
-import { TextProps, ViewProps } from "@aws-amplify/ui-react";
+import { Component1Props } from "./Component1";
+import { ViewProps } from "@aws-amplify/ui-react";
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
-export declare type FirstNameOverridesProps = {
-    FirstName?: PrimitiveOverrideProps<ViewProps>;
-    "Rectangle 245"?: PrimitiveOverrideProps<ViewProps>;
-    "First Name"?: PrimitiveOverrideProps<TextProps>;
+export declare type Component2OverridesProps = {
+    Component2?: PrimitiveOverrideProps<ViewProps>;
+    "Component 2"?: Component1Props;
 } & EscapeHatchProps;
-export declare type FirstNameProps = React.PropsWithChildren<Partial<ViewProps> & {
-    rectangle245?: React.ReactNode;
-} & {
-    overrides?: FirstNameOverridesProps | undefined | null;
+export declare type Component2Props = React.PropsWithChildren<Partial<ViewProps> & {
+    overrides?: Component2OverridesProps | undefined | null;
 }>;
-export default function FirstName(props: FirstNameProps): React.ReactElement;
+export default function Component2(props: Component2Props): React.ReactElement;
