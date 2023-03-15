@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from "@aws-amplify/ui-react";
 import { Amplify } from 'aws-amplify';
-import awsconfig from './aws-exports';
+import awsconfig from '../../aws-exports';
 import "@aws-amplify/ui-react/styles.css";
 import { FirstName, studioTheme } from "./ui-components";
 import {Desktop1 } from './ui-components'; 
