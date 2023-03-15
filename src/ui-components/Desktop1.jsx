@@ -7,38 +7,52 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
-import Component1 from "./Component1";
 import { View } from "@aws-amplify/ui-react";
-export default function Component2(props) {
+import HomePage from "./HomePage";
+export default function Desktop1(props) {
   const { overrides, ...rest } = props;
   return (
     <View
-      width="789px"
-      height="150px"
+      width="1440px"
+      height="1024px"
       display="block"
       gap="unset"
       alignItems="unset"
       justifyContent="unset"
+      overflow="hidden"
       position="relative"
       padding="0px 0px 0px 0px"
-      {...getOverrideProps(overrides, "Component2")}
+      backgroundColor="rgba(255,255,255,1)"
+      {...getOverrideProps(overrides, "Desktop1")}
       {...rest}
     >
-      <Component1
-        width="789px"
-        height="150px"
+      <View
+        width="400px"
+        height="1024px"
         display="block"
         gap="unset"
         alignItems="unset"
         justifyContent="unset"
         position="absolute"
-        top="0%"
-        bottom="0%"
-        left="0%"
-        right="0%"
+        top="0px"
+        left="0px"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Component 2")}
-      ></Component1>
+        backgroundColor="rgba(217,217,217,1)"
+        {...getOverrideProps(overrides, "Rectangle 244")}
+      ></View>
+      <HomePage
+        width="870px"
+        height="872px"
+        display="block"
+        gap="unset"
+        alignItems="unset"
+        justifyContent="unset"
+        position="absolute"
+        top="76px"
+        left="506px"
+        padding="0px 0px 0px 0px"
+        {...getOverrideProps(overrides, "HomePage")}
+      ></HomePage>
     </View>
   );
 }

@@ -16,6 +16,15 @@ import {
   Component17 
  } from './ui-components';
 
+ import {
+  Component3 
+ } from './ui-components';
+
+ import {
+  Desktop1 
+ } from './Desktop1'; 
+
+
 Amplify.configure(awsconfig);
 
 
@@ -24,7 +33,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <ThemeProvider theme={studioTheme}>
     <App />
-    <Component17 />
+    <Desktop1 />
   </ThemeProvider>
 );
 
