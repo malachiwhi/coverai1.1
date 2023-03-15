@@ -5,6 +5,7 @@
  **************************************************************************/
 
 import * as React from "react";
+import { CoverSearch } from "../models";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
 import { TextProps, ViewProps } from "@aws-amplify/ui-react";
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
@@ -14,6 +15,8 @@ export declare type WhyOverridesProps = {
     "Why Are You Seeking This Position? Whats Makes You An Ideal Candidate?"?: PrimitiveOverrideProps<TextProps>;
 } & EscapeHatchProps;
 export declare type WhyProps = React.PropsWithChildren<Partial<ViewProps> & {
+    coverSearch?: CoverSearch;
+} & {
     overrides?: WhyOverridesProps | undefined | null;
 }>;
 export default function Why(props: WhyProps): React.ReactElement;

@@ -1,0 +1,10 @@
+type CoverSearch @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  FirstName: String!
+  LastName: String!
+  Experience: String!
+  PrevPos: String
+  Why: String
+  Skills: String!
+  CompNpos: String!
+}

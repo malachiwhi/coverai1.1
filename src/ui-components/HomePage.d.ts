@@ -29,6 +29,14 @@ export declare type HomePageOverridesProps = {
     "Submit Button"?: SubmitButtonProps;
 } & EscapeHatchProps;
 export declare type HomePageProps = React.PropsWithChildren<Partial<ViewProps> & {
+    fName?: String;
+    lName?: String;
+    Pos?: String;
+    experience?: String;
+    skills?: String;
+    why?: String;
+    prePos?: String;
+} & {
     overrides?: HomePageOverridesProps | undefined | null;
 }>;
 export default function HomePage(props: HomePageProps): React.ReactElement;

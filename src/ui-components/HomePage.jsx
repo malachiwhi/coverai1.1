@@ -17,7 +17,17 @@ import Position from "./Position";
 import LastName from "./LastName";
 import SubmitButton from "./SubmitButton";
 export default function HomePage(props) {
-  const { overrides, ...rest } = props;
+  const {
+    fName = "",
+    lName,
+    Pos,
+    experience,
+    skills,
+    why,
+    prePos,
+    overrides,
+    ...rest
+  } = props;
   return (
     <View
       width="870px"

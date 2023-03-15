@@ -14,6 +14,8 @@ export declare type YearsOverridesProps = {
     "Years of Experience In Position (Type \u201CStudent\u201D or \u201CIntern\u201D if applicable"?: PrimitiveOverrideProps<TextProps>;
 } & EscapeHatchProps;
 export declare type YearsProps = React.PropsWithChildren<Partial<ViewProps> & {
+    Years?: String;
+} & {
     overrides?: YearsOverridesProps | undefined | null;
 }>;
 export default function Years(props: YearsProps): React.ReactElement;

@@ -6,10 +6,21 @@
 
 /* eslint-disable */
 import * as React from "react";
-import { getOverrideProps } from "@aws-amplify/ui-react/internal";
+import { CoverSearch } from "../models";
+import {
+  getOverrideProps,
+  useDataStoreUpdateAction,
+} from "@aws-amplify/ui-react/internal";
+import { schema } from "../models/schema";
 import { Text, View } from "@aws-amplify/ui-react";
 export default function Why(props) {
-  const { overrides, ...rest } = props;
+  const { coverSearch, overrides, ...rest } = props;
+  const rectangleTwoFourFiveOnClick = useDataStoreUpdateAction({
+    fields: {},
+    id: coverSearch?.Why,
+    model: CoverSearch,
+    schema: schema,
+  });
   return (
     <View
       width="353px"
@@ -38,6 +49,9 @@ export default function Why(props) {
         borderRadius="15px"
         padding="0px 0px 0px 0px"
         backgroundColor="rgba(217,217,217,0.65)"
+        onClick={() => {
+          rectangleTwoFourFiveOnClick();
+        }}
         {...getOverrideProps(overrides, "Rectangle 245")}
       ></View>
       <Text

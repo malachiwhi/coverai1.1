@@ -12,10 +12,15 @@ code {
     monospace;
 }
 
-.wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 100px 100px;
-  gap: 10px;
+.right{ 
+  width: 350px; 
+  height: 650px;
+  padding: 10px; 
+  background-color: #635985;
 }
 
+.fname {
+  position: relative;
+  top: 10px; 
+  left: 10px;
+}

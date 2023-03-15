@@ -9,7 +9,7 @@ import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Text, View } from "@aws-amplify/ui-react";
 export default function Years(props) {
-  const { overrides, ...rest } = props;
+  const { Years, overrides, ...rest } = props;
   return (
     <View
       width="382px"
